@@ -21,6 +21,8 @@ test.slow();
  await page.locator('#cars').selectOption(['volvo','audi']);
  await expect(page.locator('#cars')).toHaveValues(['volvo',"audi"]);
  await page.locator('#cars').selectOption(['saab','opel']);
+ await page.locator('div.css-1hwfws3').first().click();
+ await page.locator('div.css-1hwfws3').last().click();
 
 
 })
